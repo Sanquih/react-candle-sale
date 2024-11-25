@@ -1,0 +1,9 @@
+.stepper {
+    width: 50%;
+}
+
+@media (max-width: 500px) {
+  .stepper {
+    width: calc(100% - 150px);
+  }
+}

@@ -1,0 +1,26 @@
+.sizes {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  height: calc(70% - 80px);
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: auto;
+  justify-content: left;
+  align-items: flex-end;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+@media (min-width: 1600px) {
+  .sizes {
+    height: calc(80% - 80px);
+  }
+}
+
+@media (max-width: 500px) {
+  .sizes {
+    height: calc(60% - 80px);
+    margin-top: 0;
+  }
+}

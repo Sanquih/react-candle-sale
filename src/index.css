@@ -1,0 +1,288 @@
+@font-face {
+  font-family: Goudy;
+  src: url(/fonts/Goudy-Regular.ttf);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(/fonts/Outfit-Regular.ttf);
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(0, 0, 0);
+  background-color: #fff;
+
+  --primary: #f6c6b1;
+  --primaryT5: hsla(18, 79%, 83%, 0.5);
+  --primaryT9: hsla(18, 79%, 83%, 0.9);
+  --secondary: #b0b57e;
+  --secondaryT5: hsl(65, 27%, 60%, 0.5);
+  --secondaryT9: hsl(65, 27%, 60%, 0.9);
+  --tertiary: #f6c6b1;
+  --tertiaryT5: hsl(18, 78%, 83%, 0.5);
+  --tertiaryT9: hsl(18, 79%, 83%, 0.9);
+  --quaternary: #b78b90;
+  --quaternaryT5: hsl(353, 23%, 63%, 0.5);
+  --quaternaryT9: hsl(353, 23%, 63%, 0.9);
+  --light: #f5e2c2;
+  --dark: #516160;
+
+  --title: Goudy;
+  --text: Outfit;
+}
+
+* {
+  transition: 0.5s all;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scroll */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--light); /* Color del fondo del scroll */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primaryT5); /* Color principal del scroll */
+  border-radius: 10px;
+  border: 3px solid var(--light); /* Borde para hacer contraste */
+  cursor: pointer; /* Agregar puntero */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary); /* Color al pasar el cursor */
+}
+
+ol li::marker {
+  font-weight: bold; /* Hace el enumerador en negrita */
+}
+
+body,
+html,
+#root {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: var(--text);
+  overflow: hidden;
+}
+
+.row,
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h50 {
+  height: 50%;
+}
+
+.h100 {
+  height: 100%;
+}
+.view {
+  background: linear-gradient(var(--primaryT5), var(--primaryT9));
+  background-color: #fff;
+  overflow: hidden;
+}
+.viewDetails {
+  background: linear-gradient(var(--primaryT5), var(--primaryT9)),
+    url("/imgs/plant.png") left 6% bottom no-repeat,
+    url("/imgs/plant.png") right 6% bottom no-repeat;
+  background-color: #fff;
+}
+.viewDetails .content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-family: var(--title);
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+h1.mini {
+  font-size: 30px;
+  line-height: 20px;
+  margin: 0;
+}
+.text-danger.mini {
+  font-size: 15px;
+  margin: 0;
+}
+p.mini,
+li.mini,
+label.mini,
+input.mini {
+  font-size: 17px;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+li {
+  font-size: 20px;
+  text-align: left;
+}
+
+p.special,
+label,
+input {
+  font-size: 25px;
+}
+.text-danger {
+  color: var(--quaternary);
+  text-align: center;
+}
+
+.division {
+  width: 2px;
+  height: 70%;
+  border-radius: 50px;
+  background-color: var(--dark);
+  box-shadow: 0 0 4px var(--dark);
+  margin: auto;
+}
+
+.selected {
+  filter: drop-shadow(0px 0px 10px var(--secondary)) brightness(1.1);
+}
+
+.headShake {
+  animation: headShake 2s ease-in-out infinite;
+}
+@keyframes headShake {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: rotateZ(-2deg);
+  }
+  18.5% {
+    transform: rotateZ(1.5deg);
+  }
+  31.5% {
+    transform: rotateZ(-1deg);
+  }
+  43.5% {
+    transform: rotateZ(0.5deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.page-transition {
+  animation: fade-in 500ms forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    scale: 1.05;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@media (max-width: 1500px) {
+  .viewDetails {
+    background: linear-gradient(var(--primaryT5), var(--primaryT9));
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  p.special,
+  label,
+  input {
+    font-size: 23px;
+  }
+  h1.mini {
+    font-size: 25px;
+    line-height: 17px;
+  }
+  p,
+  li {
+    font-size: 18px;
+  }
+  .text-danger.mini {
+    font-size: 13px;
+  }
+  p.mini,
+  li.mini,
+  label.mini,
+  input.mini {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  p,
+  li {
+    font-size: 15px;
+  }
+  p.special,
+  label,
+  input {
+    font-size: 20px;
+  }
+  .text-danger {
+    font-size: 12px;
+  }
+
+  h1.mini {
+    font-size: 20px;
+    line-height: 13px;
+  }
+  .text-danger.mini {
+    font-size: 11px;
+  }
+  p.mini,
+  li.mini,
+  label.mini,
+  input.mini {
+    font-size: 12px;
+  }
+
+  .division {
+    width: 70%;
+    height: 2px;
+  }
+}

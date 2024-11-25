@@ -1,0 +1,19 @@
+.home {
+  position: relative;
+  background-color: #fff;
+  background-image: linear-gradient(var(--primaryT5), var(--primaryT9)),
+    url(/imgs/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  gap: 20px;
+}
+
+.home p {
+  max-width: 550px;
+  width: 90%;
+}
+
+.primaryColor {
+  color: var(--dark);
+  margin: 0;
+}

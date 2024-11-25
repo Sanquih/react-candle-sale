@@ -1,0 +1,17 @@
+.addcandlesection {
+  margin: auto;
+}
+
+.addcandlesection form{
+  gap: 20px;
+}
+
+@media (max-width: 500px) {
+  .addcandlesection form{
+    gap: 0px;
+  }
+  .buttons{
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+}

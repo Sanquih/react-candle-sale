@@ -1,0 +1,17 @@
+.price {
+  margin: auto;
+}
+.price p {
+  margin: 0;
+}
+
+.hr {
+  width: 95%;
+  height: 1px;
+  margin: 0;
+}
+
+.details {
+  width: 100%;
+  align-items: flex-end;
+}

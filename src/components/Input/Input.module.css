@@ -1,0 +1,87 @@
+.input {
+  color: var(--dark);
+}
+.gap {
+  gap: 10px;
+}
+
+.input input {
+  max-width: 65px;
+  height: 30px; /* Altura del input */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: center; /* Texto centrado */
+  outline: none; /* Elimina el borde azul por defecto */
+  transition: border-color 0.3s ease; /* Animación en el cambio de color */
+  border: 2px solid var(--primary); /* Borde personalizado */
+  background-color: var(--light); /* Fondo */
+  color: var(--dark); /* Texto */
+}
+
+.input input.mini {
+  max-width: 30px;
+  height: 20px; /* Altura del input */
+  padding: 5px; /* Espaciado interno */
+}
+
+/* Estilo para los estados */
+.input input:focus {
+  border-color: var(--secondary); /* Color del borde en foco */
+  background-color: var(--primaryT5); /* Fondo al enfocarse */
+}
+
+/* Estilo para los botones del input (flechas arriba/abajo) */
+.input input::-webkit-inner-spin-button,
+.input input::-webkit-outer-spin-button {
+  appearance: none; /* Oculta los botones en navegadores basados en WebKit */
+  margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Personaliza los botones con pseudo-elementos */
+.input input::-webkit-inner-spin-button,
+.input input::-webkit-outer-spin-button {
+  appearance: none; /* Oculta los botones */
+}
+
+.numberInput {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.numberInput button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  background-color: var(--primary);
+  color: var(--dark);
+}
+
+.numberInput.mini,
+.gap.mini {
+  gap: 3px;
+}
+
+.numberInput.mini button {
+  width: 20px;
+  height: 20px;
+}
+
+.numberInput button:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 500px) {
+  .numberInput button {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+  }
+  .input {
+    flex-direction: row;
+  }
+}

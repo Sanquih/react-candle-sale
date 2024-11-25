@@ -1,0 +1,25 @@
+.btn {
+  background-color: var(--dark);
+  margin-top: 15px;
+  color: var(--light);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  filter: brightness(0.85);
+  animation: none;
+}
+
+@media (max-width: 500px) {
+  .btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,16 @@
+.img_modal {
+  height: 100%;
+  width: calc(100% - 20px);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.p,
+.h1 {
+  margin: 0;
+}
+.p {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,29 @@
+.essences {
+  height: calc(100% - 150px);
+  width: calc(50% - 10px);
+  max-width: 560px;
+  margin: auto;
+  margin-bottom: 0;
+  overflow-y: auto;
+  justify-content: center;
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  .essences {
+    width: calc(40% - 10px);
+  }
+}
+
+@media (max-width: 500px) {
+  .essences {
+    height: 35%;
+    width: calc(100% - 10px);
+    max-width: 350px;
+    padding: 10px;
+  }
+}

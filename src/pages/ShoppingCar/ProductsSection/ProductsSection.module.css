@@ -1,0 +1,25 @@
+.productsSection {
+  width: calc(60% - 100px);
+  max-height: 100%;
+  margin: auto;
+  gap: 20px;
+  padding: 40px;
+  overflow-y: auto;
+  justify-content: flex-start;
+}
+
+.card {
+  width: 90%;
+  height: 100px;
+  color: var(--light);
+  background: radial-gradient(circle, var(--quaternaryT5), var(--quaternaryT9));
+  box-shadow: 0 0 35px var(--quaternary);
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: flex-start;
+}
+
+.void {
+  margin: 0;
+  color: var(--dark);
+}

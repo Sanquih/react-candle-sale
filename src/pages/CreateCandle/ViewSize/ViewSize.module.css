@@ -1,0 +1,6 @@
+@media (max-width: 500px) {
+  .viewsize {
+    margin-top: auto;
+    height: calc(100% - 110px);
+  }
+}

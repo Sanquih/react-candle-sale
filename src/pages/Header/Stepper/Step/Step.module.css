@@ -1,0 +1,30 @@
+.step {
+  gap: 5px;
+  color: var(--dark);
+  margin: auto;
+}
+
+.step .img {
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  border: solid 3px var(--secondary);
+  background-color: var(--light);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .step {
+    gap: 2px;
+    flex-direction: column;
+  }
+  .step .img {
+    height: 25px;
+    width: 25px;
+    font-size: 19px;
+    border: solid 2px var(--secondary);
+  }
+}

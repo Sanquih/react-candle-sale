@@ -1,0 +1,15 @@
+.close {
+  position: absolute;
+  background-color: var(--dark);
+  color: var(--light);
+  top: -10px;
+  right: -10px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.close:hover {
+  scale: 1.05;
+  filter: brightness(0.85);
+}

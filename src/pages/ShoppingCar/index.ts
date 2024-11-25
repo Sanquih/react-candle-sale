@@ -1,0 +1,1 @@
+export { default as ShoppingCar } from './ShoppingCar';

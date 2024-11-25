@@ -1,0 +1,22 @@
+.img {
+  width: 25%;
+  height: calc(100% - 10px);
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.info {
+  align-items: flex-start;
+}
+
+.info p {
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .img {
+    width: 20%;
+  }
+}

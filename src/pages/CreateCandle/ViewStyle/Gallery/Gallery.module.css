@@ -1,0 +1,14 @@
+.viewstyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: auto;
+  margin-bottom: 20px;
+  padding: 20px 50px;
+  height: calc(100% - 170px);
+  width: calc(100% - 100px);
+  max-width: 1300px;
+}

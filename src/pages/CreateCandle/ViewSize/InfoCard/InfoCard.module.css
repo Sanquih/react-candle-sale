@@ -1,0 +1,39 @@
+.infos {
+  position: absolute;
+  border-radius: 20px;
+  padding: 30px;
+  color: var(--dark);
+  background: radial-gradient(circle, var(--primaryT9), var(--primaryT5));
+  box-shadow: 0 0 35px var(--primary);
+  max-width: 60%;
+  margin-left: 30%;
+  top: 120px;
+  overflow: hidden;
+}
+.infos h1,
+.infos .info p {
+  margin: 0;
+}
+
+.infos .info {
+  align-items: start;
+}
+
+.infos .info div {
+  gap: 5px;
+}
+
+.infos .btn {
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  .infos {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    top: unset;
+  }
+}

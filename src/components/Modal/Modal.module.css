@@ -1,0 +1,25 @@
+.modal {
+  pointer-events: none;
+  opacity: 0;
+  position: fixed;
+  background-color: hsla(0, 0%, 100%, 0.7);
+  z-index: 99;
+}
+.modal.on {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.content_modal {
+  padding: 20px;
+  color: var(--dark);
+  background: radial-gradient(circle, var(--primary), var(--primaryT9));
+  box-shadow: 0 0 35px var(--primary);
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 75%;
+  max-width: 800px;
+  position: relative;
+  border-radius: 10px;
+}

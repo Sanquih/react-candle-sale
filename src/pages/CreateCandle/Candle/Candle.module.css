@@ -1,0 +1,7 @@
+@media (max-width: 500px) {
+  .candle {
+    flex-direction: column;
+    height: calc(100% - 70px);
+    margin-top: auto;
+  }
+}

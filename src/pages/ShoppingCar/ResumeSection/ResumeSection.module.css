@@ -1,0 +1,9 @@
+.resumeSection {
+  width: 35%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 30px;
+  color: var(--dark);
+  background: radial-gradient(circle, var(--primaryT9), var(--primaryT5));
+  box-shadow: 0 0 35px var(--primary);
+}

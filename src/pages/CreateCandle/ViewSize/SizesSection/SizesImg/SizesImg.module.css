@@ -1,0 +1,24 @@
+
+.size {
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  justify-content: end;
+}
+
+.size.selected::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 10%;
+  background: url("/imgs/fire.png") no-repeat center center;
+  background-size: contain;
+}
+
+.size img:hover {
+  scale: 1.01;
+  cursor: pointer;
+}
+.size.selected img {
+  filter: drop-shadow(0px 0px 6px var(--secondary)) brightness(1.05);
+}
