@@ -81,7 +81,7 @@
     height: 20px;
     font-size: 15px;
   }
-  .input {
+  .input.movilRow {
     flex-direction: row;
   }
 }

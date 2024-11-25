@@ -41,7 +41,7 @@ const AddCandleSection: React.FC<AddCandleSectionProps> = ({
     <div className={`${styles.addcandlesection} col`}>
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(addToCart)} className="col">
-          <Input name="amount" type="number" >
+          <Input movilRow="movilRow" name="amount" type="number" >
             <b>Cantidad:</b>
           </Input>
           <div className={`${styles.buttons} col`}>

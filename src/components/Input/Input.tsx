@@ -7,6 +7,7 @@ import styles from "./Input.module.css";
 type type = "text" | "number";
 type btnType = "button" | "submit";
 type className = "" | "mini";
+type movilRow = "" | "movilRow";
 
 export type InputProps = {
   name: string;
@@ -17,6 +18,7 @@ export type InputProps = {
   max?: string;
   className?: className;
   color?: string;
+  movilRow?: movilRow;
 };
 
 const Input: React.FC<InputProps> = ({
@@ -28,6 +30,7 @@ const Input: React.FC<InputProps> = ({
   btnType = "button",
   className = "",
   color = "",
+  movilRow = "",
 }) => {
   const { register, formState, getFieldState, setValue, getValues } =
     useFormContext();
@@ -48,7 +51,9 @@ const Input: React.FC<InputProps> = ({
   };
 
   return (
-    <div className={`${styles.input} ${styles.gap} ${styles[className]} col`}>
+    <div
+      className={`${styles.input} ${styles[movilRow]} ${styles.gap} ${styles[className]} col`}
+    >
       <label htmlFor={name} className={className} style={{ color: color }}>
         {children}
       </label>

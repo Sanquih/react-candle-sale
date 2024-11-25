@@ -24,7 +24,7 @@ const Candle: React.FC<CandleProps> = ({}) => {
     <div className={`row viewDetails h100 w100`}>
       <div className={`${styles.candle} content row w100 h100`}>
         <CurrentCandleSection />
-        <div className="division"></div>
+        <div className="division movilH"></div>
         <AddCandleSection
           amount={currentCandle.amount}
           handlePush={handlePush}

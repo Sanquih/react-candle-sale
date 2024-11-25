@@ -7,3 +7,12 @@
   background: radial-gradient(circle, var(--primaryT9), var(--primaryT5));
   box-shadow: 0 0 35px var(--primary);
 }
+.resumeSection h1 {
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .resumeSection {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+}

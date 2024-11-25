@@ -14,7 +14,7 @@ const BtnSection: React.FC<BtnSectionProps> = ({
   editCandle,
 }) => {
   return (
-    <div className={`${styles.btns} col`}>
+    <div className={`${styles.btns} col movilRow`}>
       <MyButton className={styles.btn} onClick={removeCandle}>
         <AiFillDelete />
       </MyButton>

@@ -43,11 +43,13 @@ const ProductsSection: React.FC<ProductsSectionProps> = ({}) => {
               styleName={candle.style.name}
             />
             <div className="division"></div>
-            <EditAmountCandle candle={candle} />
-            <BtnSection
-              removeCandle={() => dispatch(removeCandleById(candle.id))}
-              editCandle={() => handleEditCandle(candle)}
-            />
+            <div className="row movilCol">
+              <EditAmountCandle candle={candle} />
+              <BtnSection
+                removeCandle={() => dispatch(removeCandleById(candle.id))}
+                editCandle={() => handleEditCandle(candle)}
+              />
+            </div>
             <PriceSection
               className="mini"
               color="var(--light)"

@@ -281,8 +281,18 @@ input {
     font-size: 12px;
   }
 
-  .division {
+  .division.movilH {
     width: 70%;
     height: 2px;
+  }
+
+  .movilRow {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .movilCol {
+    flex-direction: column;
+    gap: 5px;
   }
 }

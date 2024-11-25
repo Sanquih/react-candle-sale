@@ -15,18 +15,25 @@ const InfoProduct: React.FC<InfoProductProps> = ({
   sizeName,
   styleName,
 }) => {
+  const movil = window.innerWidth < 500;
+
   return (
     <>
-      <div className={styles.img} style={{ backgroundImage: `url(${img})` }} />
+      {movil ? null : (
+        <div
+          className={styles.img}
+          style={{ backgroundImage: `url(${img})` }}
+        />
+      )}
       <div className={`col ${styles.info}`}>
         <p className="mini">
-          <b>Esencia:</b> {essenceName}
+          {movil ? null : <b>Esencia:</b>} {essenceName}
         </p>
         <p className="mini">
-          <b>Tamaño:</b> {sizeName}
+          {movil ? null : <b>Tamaño:</b>} {sizeName}
         </p>
         <p className="mini">
-          <b>Estilo:</b> {styleName}
+          {movil ? null : <b>Estilo:</b>} {styleName}
         </p>
       </div>
     </>

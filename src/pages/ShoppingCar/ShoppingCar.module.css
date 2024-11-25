@@ -2,3 +2,12 @@
   height: calc(100% - 150px);
   margin-bottom: 0;
 }
+
+@media (max-width: 500px) {
+  .shoppingcar {
+    flex-direction: column;
+    height: calc(100% - 65px);
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+}

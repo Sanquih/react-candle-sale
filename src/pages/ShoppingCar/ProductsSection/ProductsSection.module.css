@@ -23,3 +23,14 @@
   margin: 0;
   color: var(--dark);
 }
+
+@media (max-width: 500px) {
+  .productsSection {
+    width: calc(100% - 30px);
+    padding: 15px;
+    gap: 15px;
+  }
+  .card {
+    box-shadow: 0 0 15px var(--quaternary);
+  }
+}
